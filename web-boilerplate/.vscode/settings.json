@@ -1,0 +1,6 @@
+{
+    "prettier.printWidth": 100,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+}

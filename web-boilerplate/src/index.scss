@@ -1,0 +1,45 @@
+@import "node_modules/include-media-or/dist/_include-media-or.scss";
+@import "node_modules/include-media-or/dist/_include-media-or.scss";
+$tablet-phones: ("<=tablet", "retina2x" "<=999px", ("retina3x" "<=2048px"));
+$main-color: #ff7f2a;
+@include media($tablet-phones) {
+  .container {
+    margin: auto;
+    width: 96% !important;
+  }
+}
+
+.fluid {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  &.small {
+    width: 60%;
+  }
+  &.large {
+    width: 90%;
+  }
+}
+
+// flex helpers
+.flex {
+  display: flex;
+  align-items: center;
+  &.s-b {
+    justify-content: space-between;
+  }
+  &.s-a {
+    justify-content: space-around;
+  }
+  &.spaced {
+    > * {
+      margin-right: 1rem;
+    }
+    > :last-child {
+      margin: 0;
+    }
+  }
+}

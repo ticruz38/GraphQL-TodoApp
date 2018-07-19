@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "jsx": "react",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "checkJs": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "paths": {
+      "config": ["config"],
+      "shared-components": ["shared-components"],
+      "utils": ["utils"],
+      "server": ["server"],
+      "src": ["src"],
+      "i18n": ["i18n"],
+      "static": ["static"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

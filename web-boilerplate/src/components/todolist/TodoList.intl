@@ -1,0 +1,9 @@
+todolist: 
+  titlePlaceholder: Title
+  contentPlaceholder: Description
+  createTodo: Create task
+  delete: Delete
+  errors:
+    title: Please enter a title
+    content: Please enter a description 
+    required: This field is required

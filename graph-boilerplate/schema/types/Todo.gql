@@ -1,0 +1,12 @@
+type Todo {
+  id: String
+  title: String
+  content: String
+  date: Float
+  done: Boolean
+}
+
+input TodoInput {
+  title: String
+  content: String
+}

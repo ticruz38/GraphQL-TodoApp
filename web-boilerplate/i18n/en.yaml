@@ -1,0 +1,28 @@
+admin:
+  info: This screen is only visible by admin user
+login:
+  username: Username
+  usernameError: Please input your username
+  password: Password
+  passwordError: Please input your password!
+  forgotpassword: Forgot password
+  login: Log in
+  signup: Signup
+  errors:
+    noUser: This user doesn't exist
+    userExist: This user already exist in our database
+    wrongPassword: Sorry this password is incorrect
+todolist: 
+  titlePlaceholder: Title
+  contentPlaceholder: Description
+  createTodo: Create task
+  delete: Delete
+  errors:
+    title: Please enter a title
+    content: Please enter a description 
+    required: This field is required
+header:
+  main: Boilerplate front
+  tabs:
+    todos: Todos
+    admin: Admin

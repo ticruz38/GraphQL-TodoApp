@@ -1,0 +1,15 @@
+.todo-list {
+  padding: 3rem 0 2rem;
+  .todo {
+    position: relative;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 0 1px black;
+    .content {
+      padding: 0.5rem 1rem;
+    }
+    .button-wrapper {
+      justify-content: flex-end;
+    }
+  }
+}

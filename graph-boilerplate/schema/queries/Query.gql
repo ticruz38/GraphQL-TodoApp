@@ -1,0 +1,6 @@
+type Query {
+  user: User
+  randomUser: User # this is used when we click on forgot password
+  users: [User]
+  todos: [Todo]
+}

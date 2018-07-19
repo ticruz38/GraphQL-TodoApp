@@ -1,0 +1,12 @@
+login:
+  username: Username
+  usernameError: Please input your username
+  password: Password
+  passwordError: Please input your password!
+  forgotpassword: Forgot password
+  login: Log in
+  signup: Signup
+  errors:
+    noUser: This user doesn't exist
+    userExist: This user already exist in our database
+    wrongPassword: Sorry this password is incorrect

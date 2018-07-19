@@ -1,0 +1,23 @@
+@keyframes layoutLoader {
+  0% {
+    background: linear-gradient(to right, #00b9ad 17%, #003a4d 90%);
+  }
+  50% {
+    background: linear-gradient(to right, #003a4d 17%, #00b9ad 90%);
+  }
+  100% {
+    background: linear-gradient(to right, #003a4d 17%, #00b9ad 90%);
+  }
+}
+
+.layout-loader {
+  height: 120px;
+  &.dashboard {
+    height: 50px;
+  }
+  left: 0;
+  position: absolute;
+  width: 100%;
+  animation: layoutLoader 1s linear infinite;
+  background: linear-gradient(to right, #00b9ad 17%, #003a4d 90%);
+}

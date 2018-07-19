@@ -1,0 +1,27 @@
+admin:
+  info: "Cet écran n'est visible que par l'utilisateur admin"
+login:
+  username: "nom d'utilisateur"
+  usernameError: "Veuillez entrer votre nom d'utilisateur"
+  password:
+  passwordError: Veuillez entrer votre mot de passe!
+  forgotpassword: Mot de passe oublié
+  login: Log in
+  signup: Inscription
+  errors:
+    noUser: "Cet utilisateur n'existe pas"
+    userExist: Cet utilisateur existe déjà dans notre base de données
+    wrongPassword: Désolé ce mot de passe est incorrect
+todolist:
+  titlePlaceholder: Titre
+  contentPlaceholder: Description
+  createTodo: Créer une tâche
+  delete: Supprimer
+  errors:
+    title: "S'il vous plaît entrer un titre"
+    contenu: veuillez entrer une description
+    required: Ce champ est obligatoire
+header:
+  tabs:
+    todos: Taches
+    admin: Admin

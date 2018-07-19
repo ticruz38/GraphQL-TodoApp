@@ -1,0 +1,34 @@
+@import "src/index.scss";
+.fundsdlt-header {
+  > :first-child {
+    border-bottom: 1px solid $main-color;
+  }
+  .fundsdlt-header-band {
+    padding: 1.5rem 0;
+  }
+  .container::after {
+    display: none;
+  }
+  .app-icon {
+    height: 2rem;
+    margin-right: 10px;
+  }
+  .main-button {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .condensed-header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    .ant-menu-horizontal {
+      border-bottom: none;
+    }
+  }
+  .logged-menu {
+    cursor: default;
+    .ant-badge {
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "web": {
+      "schemaPath": "schema.json",
+      "extensions": {
+        "endpoints": {
+          "dev": {
+            "url": "http://localhost:2222/",
+            "subscription": "ws://localhost:2222/sockets"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+directive @auth(requires: [Role]) on FIELD_DEFINITION
+
+enum Role {
+  ManagementCompany # 35 Distributor
+  TransferAgent # 37 TA
+  OrderGiver # 36 Distributor
+  SubTransferAgent # 38 TA
+  OrdersRouter # 39 Distributor
+  System # 0 All
+  Admin # ???
+}

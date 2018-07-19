@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "es2015.core",
+      "es2015.collection",
+      "es2015.generator",
+      "es2015.iterable",
+      "es2015.promise",
+      "es2015.proxy",
+      "es2015.reflect",
+      "es2015.symbol",
+      "es2015.symbol.wellknown",
+      "esnext.asynciterable"
+    ] /* Specify library files to be included in the compilation:  */,
+    "jsx": "react",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "checkJs": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "paths": {
+      "config": ["config"],
+      "utils": ["utils"],
+      "schema": ["schema"],
+      "session": ["session"],
+      "subscription-endpoint": ["subscription-endpoint"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
