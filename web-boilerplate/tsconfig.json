@@ -15,7 +15,7 @@
       "shared-components": ["shared-components"],
       "utils": ["utils"],
       "server": ["server"],
-      "src": ["src"],
+      "src": ["./src/"],
       "i18n": ["i18n"],
       "static": ["static"]
     }

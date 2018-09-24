@@ -5,11 +5,11 @@ export default ({ content, state }) => (
     <head>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <title>Boilerplate</title>
+      <title>Graphql Boilerplate</title>
       <meta name="description" content="" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href={STATIC_URL + "/app.css"} />
-      <link rel="shortcut icon" href="/assets/icon/57x57.png" />
+      {PRODUCTION ? <link rel="stylesheet" href={STATIC_URL + "/app.css"} /> : null}
+      {/* <link rel="shortcut icon" href="/assets/icon/57x57.png" /> */}
     </head>
     <body>
       <div id="app" dangerouslySetInnerHTML={{ __html: content }} />

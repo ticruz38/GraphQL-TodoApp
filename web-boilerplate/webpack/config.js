@@ -87,7 +87,9 @@ const vendors = [
 exports.vendors = vendors;
 
 const plugins = [
-  new ExtractTextPlugin("[name].css"),
+  new ExtractTextPlugin({ filename: "[name].css", disable: !isProd }),
+  isProd ? null : new webpack.HotModuleReplacementPlugin(),
+  isProd ? null : new webpack.NamedModulesPlugin(),
   new webpack.DefinePlugin({
     PRODUCTION: !!isProd,
     WEB_HOST: JSON.stringify(process.env.WEB_HOST),

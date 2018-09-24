@@ -19,14 +19,13 @@ const persistor = new CachePersistor({
   storage: window.sessionStorage,
   maxSize: false
 });
-// }
 
 // ensure the data fetched from server is merged into localstorage cache
 persistor.restore().then(_ => persistor.persist());
 
 const batchLink = new BatchHttpLink({
   uri: HTTP_GRAPHQL_URL,
-  credentials: PRODUCTION ? "same-origin" : "include",
+  credentials: "same-origin",
   batchInterval: 20
 });
 

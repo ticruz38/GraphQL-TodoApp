@@ -2,6 +2,7 @@ import pubsub from "schema/PubSub";
 import { withFilter } from "graphql-subscriptions";
 export const ON_NEW_TODO = "ON_NEW_TODO";
 export const ON_REMOVE_TODO = "ON_REMOVE_TODO";
+export const NOTIFICATION = "NOTIFICATION";
 
 export default {
   onNewTodo: {
