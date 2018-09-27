@@ -84,9 +84,9 @@ export class TodoList extends React.PureComponent<Props> {
           </Button>
         </Form>
         <br />
-        {[...this.props.data.todos]
-          .sort((a, b) => a.date - b.date)
-          .map(todo => <Todo key={todo.id} todo={todo} removeTodo={this.deleteTodo} />)}
+        {[...this.props.data.todos].sort((a, b) => a.date - b.date).map(todo => (
+          <Todo key={todo.id} todo={todo} removeTodo={this.deleteTodo} />
+        ))}
       </div>
     );
   }
@@ -122,6 +122,12 @@ export const REMOVE_TODO = gql`
 export const GET_TODOS = gql`
   ${TODO_FRAGMENT}
   query GetTodos {
+    user {
+      name
+      todos {
+        content
+      }
+    }
     todos {
       ...TodoFragment
     }

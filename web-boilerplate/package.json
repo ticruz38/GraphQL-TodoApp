@@ -12,7 +12,7 @@
     "start:web:prod": "cross-env NODE_ENV=production node dist/web.js",
     "build:client": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/webpack.client.js --progress --profile --watch",
     "build:client:prod": "cross-env NODE_ENV=prod webpack --config webpack/webpack.client.js --progress",
-    "build:web": "cross-env NODE_ENV=dev webpack --config webpack/webpack.server.js --progress",
+    "build:web": "cross-env NODE_ENV=dev NODE_OPTIONS=--max_old_space_size=8192 webpack --config webpack/webpack.server.js --progress",
     "build:web:prod": "cross-env NODE_ENV=prod webpack --config webpack/webpack.server.js --progress",
     "types": "node_modules/.bin/gql-gen --schema http://localhost:2222/ --template graphql-codegen-typescript-template --out ./graphql-typings.d.ts 'src/**/*.{ts,tsx}'"
   },

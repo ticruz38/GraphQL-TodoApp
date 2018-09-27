@@ -9,7 +9,7 @@ const app = express();
 // this is used by kubernetes, for healthcheck
 app.get("/liveness", (req, res, next) => res.send("life is good"));
 
-app.use(favicon("static/images/react-boilerplate.png"));
+app.use(favicon("static/images/graphql.png"));
 
 app.use("/dist", express.static("dist"));
 
