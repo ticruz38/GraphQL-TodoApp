@@ -1,8 +1,8 @@
 # GRAPHQL BOILERPLATE
 
 This boilerplate is made of 2 express server:
-  - graph-boilerplate is the graphql server
-  - web-boilerplate serve static files and SSR the webpage
+  - graph is the graphql server
+  - web serve static files and SSR the webpage
 
 To start the project go in each folder, follow the instructions in the README in each sub-folder
 
